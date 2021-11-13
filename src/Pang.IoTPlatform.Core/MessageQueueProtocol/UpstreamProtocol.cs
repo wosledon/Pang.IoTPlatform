@@ -26,6 +26,11 @@ namespace Pang.IoTPlatform.Core.MessageQueueProtocol
         public short Protocol { get; set; } = default!;
 
         /// <summary>
+        /// 消息体
+        /// </summary>
+        public byte[] Buffer { get; set; } = default!;
+
+        /// <summary>
         /// 序列化
         /// </summary>
         /// <returns> </returns>
@@ -50,6 +55,16 @@ namespace Pang.IoTPlatform.Core.MessageQueueProtocol
     /// <remarks> 协议体为字符串 </remarks>
     public class UpstreamProtocolString : IUpstreamProtocol<UpstreamProtocolString>
     {
+        /// <summary>
+        /// 协议头, 用于标记协议类型
+        /// </summary>
+        public short Protocol { get; set; } = default!;
+
+        /// <summary>
+        /// 消息体
+        /// </summary>
+        public string Body { get; set; } = default!;
+
         /// <summary>
         /// 序列化
         /// </summary>
