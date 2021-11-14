@@ -36,6 +36,7 @@ namespace Pang.IoTPlatform.Core.MessageQueueProtocol
         /// <returns> </returns>
         public string Serialize()
         {
+            var protocol = Convert.ToString(Protocol, 2);
             throw new NotImplementedException();
         }
 

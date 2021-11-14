@@ -16,7 +16,7 @@ namespace Pang.IoTPlatform.Core.MessageQueueProtocol
     public class DownstreamProtocolStream : IDownstreamProtocol<DownstreamProtocolStream>
     {
         /// <summary>
-        /// 协议标识
+        /// 设备标识
         /// </summary>
         public string EquipmentId { get; set; } = default!;
 
@@ -52,7 +52,7 @@ namespace Pang.IoTPlatform.Core.MessageQueueProtocol
     public class DownstreamProtocolString : IDownstreamProtocol<DownstreamProtocolStream>
     {
         /// <summary>
-        /// 协议标识
+        /// 设备标识
         /// </summary>
         public string EquipmentId { get; set; } = default!;
 
